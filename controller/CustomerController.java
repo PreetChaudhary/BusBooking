@@ -30,7 +30,7 @@ public class CustomerController {
         return customerService.getAllCustomer();
 
     }
-//http://localhost:8080/api/customer/id
+//http://localhost:8080/api/customer/id  testing 
     @GetMapping("/{id}")
     public ResponseEntity<CustomerDto> getCustomerById(@PathVariable("id") Long id){
       return new ResponseEntity<>(customerService.getCustomerById(id),HttpStatus.OK);
